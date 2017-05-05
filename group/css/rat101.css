@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* Invoking the Google Font must be the 1st line of the CSS Style sheet. CSS Comment */
+
+/* Then we set the Google font Montserrat with Arial and sans-serif as backup fonts in the CSS BODY section. */
+/* This sets the default font for all text within the entire body of the webpage. */
+
+/* The entire webpage will try 1st to use the Google Font Montserrat. If Montserrat fails the it will try Arial. CSS Comment */
+/* Finally, if Arial Fails it will try to load an available sans-serif font. CSS Comment */
+
+
+/* This is the rat101.css file for Quatrotres index.html HTML file on http://c9.io group project Comment */
+/* NYPL Group Project by Tricia and Dan. Comment */
+
+/* Filename: style.css   CSS file 1 of 4: for Quatrotres http://c9.io group project CSS Comment */
+/* Filename: rat101.css  CSS file 2 of 4: for Quatrotres http://c9.io group project CSS Comment */
+/* Filename: ratlore.css CSS file 3 of 4: for Quatrotres http://c9.io group project CSS Comment */
+/* Filename: about.css   CSS file 4 of 4: for Quatrotres http://c9.io group project CSS Comment */
+
+/* The Google Font named 'Montserrat' is the font used */
+body {
+      font-family: 'Montserrat', Arial, sans-serif;
+     }
+
+h1 {
+    margin: 0;
+   }
+
+/* The Color-Hex.com color palatte is: orangegreypink     */
+/*                                                        */
+/* COLOR #1: Blackish Grey       HEX CODE: #545A5A        */
+/* COLOR #2: Very Darkish Grey   HEX CODE: #958F7F        */
+/* COLOR #3: Light Grey          HEX CODE: #E2DDC7        */
+/* COLOR #4: Dark Pink           HEX CODE: #CD9E8E        */
+/* COLOR #5: Dark Orange         HEX CODE: #D88657        */
+/*                                                        */
+/* End of the orangegreypink color palatte HEX Reference. */
+
+/* DIV #1= ID #entirefullbody CSS Comment                  */
+/* Setting the background-color of DIV ID: #entirefullbody */
+/* DIV ID #entirefullbody color is Blackish Grey: #545A5A  */ 
+/* DIV ID #entirefullbody color was purple                 */ 
+
+#entirefullbody {
+                 background: #545A5A;
+                 padding: 10px 10px 12px 10px;
+	            }
+
+/* DIV #2= ID #header CSS Comment */
+/*                                                  */
+/* Setting the background-color of DIV ID: #header  */
+/* DIV ID #header color is Dark Orange: #D88657     */ 
+/* DIV ID #header color was lightgreen              */ 
+/*                                                  */
+
+#header {
+         text-align: center;
+         width: 100%;
+         height: 250px;
+         background: #D88657;
+        }
+
+#header h1 {
+            font-size: 125px;
+            margin-bottom: 0px;
+           }
+
+#header p {
+           font-size: 30px;
+           margin-top: 10px;
+          } 
+
+/* DIV #3= ID #navtxt CSS Comment */
+/* Tested and removed position: fixed; from code below CSS Comment */
+/* position: fixed; made the horizontal navigation bar fixed during browser zooms & scrolls CSS Comment */
+/* position: fixed; was not the desired effect for viewing styling or usability CSS Comment */
+/* setting hover value background-color: black; FAILS in the #navtxt a: hover section below CSS Comment */
+/* Probably background-color: black; fails because the background value is dominantly- set in #navtxt */
+/* Set the color to 1 of the 5 color pallate orangegreypink form of light grey with HEX code: #E2DDC7 - CSS Comment */
+/*                                                  */
+/* Setting the background-color of DIV ID: #navtxt  */
+/* DIV CLASS #navtxt color is Light Grey: #E2DDC7   */ 
+/* DIV CLASS #navtxt color was lightyellow          */ 
+/*                                                  */
+
+#navtxt {
+         height: 100px;
+         width: 93%;
+         background: #E2DDC7;
+         padding: 10px 46px;
+         text-align: center;
+         }
+
+
+#navtxt a:hover {
+                 color: #D88657;
+                }
+
+#navtxt a { 
+           text-decoration: none;
+           padding: 10px 10px;
+          }
+
+#navtxt ul {
+            font-weight: bold;
+            font-size: 30px;
+            list-style-type: none;
+           }
+
+#navtxt li {
+             display: inline-block;
+             margin-left: 30px;
+           }
+
+
+/* DIV #4 ID #container CSS Comment */
+/* DIV ID #container is special it contains DIV ID's #navpic & #content CSS Comment */
+/* DIV ID #container was created to (1) Control the Picture Navigation of DIV ID: #navpic CSS Comment */
+/*                 &                      */
+/* DIV ID container was created to (2) Format the Content DIV ID: #content next to the picture nav: #navpic */
+/* The padding for the ID #container is initially being set to: 0x 10px 0px 10px for top right bottom and left padding. These valus are set as a reference and will be adjusted as needed/necessary */
+
+#container {
+            padding: 20px 10px 0px 20px;
+           }
+
+/* DIV #5 ID #navpic CSS Comment */
+/* Tested Set Fix Widths instead of Percentages changed width: 100%; to 200px CSS Comment */ 
+/* Tested Set Fix Widths as Percentages instead of fixed pixel values CSS Comment */
+/* DIV ID #navpic is set to float: left; within DIV ID #container to keep it to the left of DIV ID #content */
+/* and DIV ID #content will float right within the DIV ID #container to place next to DIV ID #navpic */ 
+/* In this particulate case the DIV ID #footer needs to be modified to be displayed properly after #nav & #content. CSS Comment */
+/* DIV ID #footer needs to "clear both of the side-by-side DIV's. It needs to clear #navpic & #content */
+/* So it is necessary to issue the clear: both; command within the DIV ID #footer CSS section */
+/* Interesting effect removed from DIV ID #navpic CSS border:1px solid grey; CSS Comment */
+/*                                                  */
+/* Setting the background-color of DIV ID: #navpic  */
+/* DIV CLASS #navpic color is Light Grey: #E2DDC7   */ 
+/* DIV CLASS #navpic color was lightblue            */ 
+/*                                                  */
+
+#navpic {
+         height: 700px;
+         width: 11.5%;
+         background: #E2DDC7;
+         float: left;
+         }
+
+#navpic a { 
+           text-decoration: none;
+          }
+
+#navpic ul {
+            font-weight: bold;
+            font-size: 25px;
+            margin: 20px 10px 0px 0px;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+           }
+
+#navpic li:hover {
+                   color: #D88657;
+                  }
+
+#navpic li {
+             margin-top: 3px;
+           }
+
+#navpic li: first-child
+                        {
+                         margin-top:0;
+                        }
+
+
+/* DIV #6 ID #content CSS Comment */
+/* Set Fix Widths instead of Percentages changed width: 100%; to 1000px CSS Comment */ 
+/* Tested Set Fixed Widths as Percentages instead of fixed pixel values CSS Comment */ 
+/* DIV ID #content is set to float: right; within DIV ID #container to keep it to the right side of DIV ID #navpic CSS Comment */
+/* and DIV ID #navpic will float left within the DIV ID #container to place next to DIV ID #content */
+/* The float:left; & the float: right; cause trouble with position of the DIV's that come afterwards */ 
+/* In this particulate case the DIV ID #footer needs to be modified to be displayed properly after #nav & #content. CSS Comment */
+/* DIV ID #footer needs to "clear both of the side-by-side DIV's. It needs to clear #navpic & #content */
+/* So it is necessary to issue the clear: both; command within the DIV ID #footer CSS section */
+/* DIV #6= ID #content CSS Comment                         */
+/* Setting the background-color of DIV ID: #content        */
+/* DIV ID #content color is Dark Pink: #CD9E8E             */ 
+/* DIV ID #content color was lightgrey! Ha! Ha!            */ 
+
+
+#content {
+          height: 672px;
+          width: 81.75%;
+          font-size: 25px;
+          font-weight: bold;
+          background: #CD9E8E;
+          padding: 0px 15px 30px 60px;
+          margin: 0px 0px 30px 0px;
+          float: right;
+         }
+
+#content h1 {
+            margin-top: 20px;
+            
+           }
+
+#content p {
+            margin-bottom: 10px
+           } 
+
+/* DIV #7 CLASS .footer CSS Comment */
+/* CSS value of clear: both; added to the CSS styling of section for DIV CLASS: .footer to display properly */  
+/* DIV CLASS .footer needs to "clear both of the side-by-side DIV's. It needs to clear DIV ID #navpic & DIC ID #content */
+/* So it is necessary to issue the clear: both; command within the DIV CLASS .footer CSS section */
+/* Placed DIV CLASS .footer into the DIV ID #entirefullbody to facilitate styling/positioning of ALL content */  
+/* DIV #7= CLASS .footer CSS Comment                         */
+/* Setting the background-color of DIV CLASS: .footer        */
+/* DIV CLASS .footer color is Dark Orange: #D88657           */ 
+/* DIV ID #content color was lightpink                       */ 
+
+.footer {
+         height: 50px;
+         width: 95%;
+         background: #D88657;
+         padding: 20px 25px 0px 40px;
+         font-weight: bold;
+         text-align: right;
+         clear: both;
+        }
+

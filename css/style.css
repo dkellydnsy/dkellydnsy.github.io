@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+/* Invoking the Google Font must be the 1st line of the CSS Style sheet. CSS Comment */
+
+/* Then we set the Google font Montserrat with Arial and sans-serif as backup fonts in the CSS BODY section. */
+/* This sets the default font for all text within the entire body of the webpage. */
+
+/* The entire webpage will try 1st to use the Google Font Montserrat. If Montserrat fails the it will try Arial. CSS Comment */
+/* Finally, if Arial Fails it will try to load an available sans-serif font. CSS Comment */
+
+
+/* This is the about.css file for "Threes" index.html HTML file on http://c9.io individual project Comment */
+/* NYPL Individual Project by Dan. Comment */
+
+/* ALL DIV #5 conent has been removed from the about.html & this about.css file. */
+
+
+/* Filename: style.css   CSS file 1 of 4: for Threes individual project - http://c9.io group project CSS Comment */
+
+/* The Google Font named 'Exo' is the font used */
+body {
+      font-family: 'Exo', Arial, sans-serif;
+     }
+
+h1 {
+    margin: 0;
+   }
+
+/* The Color-Hex.com color palatte is: moreTriadics */
+/*                                                  */
+/* COLOR #1: Light Red/Pink HEX CODE: FF77AA        */
+/* COLOR #2: Light Green    HEX CODE: AAFF77        */
+/* COLOR #3: Light Blue     HEX CODE: 77AAFF        */
+/* COLOR #4: White          HEX CODE: FFFFFF        */
+/* COLOR #5: Black          HEX CODE: 000000        */
+/*                                                  */
+/* End of the moreTriadics redgreenbluewhiteblackpallette color palatte HEX Reference. */
+
+/* DIV #1= ID #entirefullbody CSS Comment                           */
+/* Setting the background-color of DIV ID: #entirefullbody          */
+/* DIV ID #entirefullbody color is True Black Hex Code: #000000     */ 
+
+#entirefullbody {
+                 background: #000000;
+                 padding: 10px 10px 12px 10px;
+	            }
+
+/* DIV #2= ID #header CSS Comment */
+/*                                                            */
+/* Setting the background-color of DIV ID: #header            */
+/* DIV ID #header color is Light Blue: HEX CODE: #77AAFF      */
+/*                                                            */
+
+#header {
+         text-align: center;
+         width: 100%;
+         height: 285px;
+         background: #77AAFF;
+        }
+
+#header h1 {
+            font-size: 125px;
+            margin-bottom: 0px;
+           }
+
+#header p {
+           font-size: 30px;
+           margin-top: 10x;
+          } 
+
+/* DIV #3= D #navtxt CSS Comment */
+/* Set the color to 2 of the 5 color pallate moreTridicas link of light green with HEX code: #AAFF77 - CSS Comment */
+/*                                                                        */
+/* Setting the background-color of DIV ID: #navtxt                        */
+/* DIV CLASS #navtxt color is Light Green: Hex Code is: #AAFF77           */ 
+/* HOVER COLOR COMPLETES THE COLOR PALLATE WHITE (TRUE) HEX CODE: #FFFFFF */
+/*                                                                        */
+
+
+
+#navtxt {
+         height: 40px;
+         width: 93%;
+         background: #AAFF77;
+         padding: 1px 66px 85px;
+         text-align: center;
+         }
+
+
+#navtxt a:hover {
+                 color: #FFFFFF;
+                }
+
+#navtxt a { 
+           text-decoration: none;
+           padding: 10px 45px;
+          }
+
+#navtxt ul {
+            font-weight: bold;
+            font-size: 40px;
+            list-style-type: none;
+           }
+
+#navtxt li {
+             display: inline-block;
+             margin-left: 30px;
+           }
+
+
+/* DIV #4 ID #container CSS Comment */
+/* DIV ID #container is special it contains DIV ID #content CSS Comment */
+/* DIV ID container was created to format Format the Content DIV ID: #content */
+/* The padding for the ID #container is initially being set to: 0x 10px 0px 10px for top right bottom and left padding. These values were inirtially set for reference and will be adjusted as needed/necessary */
+
+#container {
+            padding: 20px 10px 0px 20px;
+           }
+
+/* DIV #5 ID #navpic CSS Comment */
+/* Tested Set Fix Widths instead of Percentages changed width: 100%; to 200px CSS Comment */ 
+/* Tested Set Fix Widths as Percentages instead of fixed pixel values CSS Comment */
+/* DIV ID #navpic is set to float: left; within DIV ID #container to keep it to the left of DIV ID #content */
+/* and DIV ID #content will float right within the DIV ID #container to place next to DIV ID #navpic */ 
+/* In this particulate case the DIV ID #footer needs to be modified to be displayed properly after #nav & #content. CSS Comment */
+/* DIV ID #footer needs to "clear both of the side-by-side DIV's. It needs to clear #navpic & #content */
+/* So it is necessary to issue the clear: both; command within the DIV ID #footer CSS section */
+/* Interesting effect removed from DIV ID #navpic CSS border:1px solid grey; CSS Comment */
+/*                                                  */
+/* Setting the background-color of DIV ID: #navpic  */
+/* DIV CLASS #navpic color is Light Grey: #E2DDC7   */ 
+/* DIV CLASS #navpic color was lightblue            */ 
+/*                                                  */
+
+
+/* DIV #5 none has been remove from this css style sheet */
+
+
+/* DIV #6 ID #content CSS Comment */
+/* Set Fix Widths instead of Percentages changed width: 100%; to 1000px CSS Comment */ 
+
+/* DIV #6= ID #content CSS Comment                                */
+/* Setting the background-color of DIV ID: #content               */
+/* DIV ID #content color is light Redish Pink: Hex Code: #FF77AA  */ 
+/* DIV ID #content color was lightgrey! Ha! Ha!                   */ 
+
+
+#content {
+          height: 1100px;
+          width: 95.5%;
+          font-size: 25px;
+          font-weight: bold;
+          background: #FF77AA;
+          padding: 10px 12px 10px 65px;
+          margin: 0px 0px 10x 20px;
+         }
+
+#content h1 {
+            margin-top: 20px;
+            
+           }
+
+#content p {
+            margin-bottom: 10px
+           } 
+
+/* DIV #7 CLASS .footer CSS Comment */
+/* CSS value of clear: both; added to the CSS styling of section for DIV CLASS: .footer to display properly */  
+/* DIV CLASS .footer needs to "clear both of the side-by-side DIV's. It needs to clear DIV ID #navpic & DIC ID #content */
+/* So it is necessary to issue the clear: both; command within the DIV CLASS .footer CSS section */
+/* Placed DIV CLASS .footer into the DIV ID #entirefullbody to facilitate styling/positioning of ALL content */  
+/* DIV #7= CLASS .footer CSS Comment                         */
+/* Setting the background-color of DIV CLASS: .footer        */
+/* DIV CLASS .footer color is Light Blue: Hex Code: #77AAFF  */ 
+
+.footer {
+         height: 50px;
+         width: 95.5%;
+         background: #77AAFF;
+         padding: 20px 38px 0px 40px;
+         margin-top: 20px;
+         font-weight: bold;
+         text-align: right;
+        }
+
